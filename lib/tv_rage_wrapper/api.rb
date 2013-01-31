@@ -1,5 +1,4 @@
 require 'httparty'
-require 'debugger'
 
 module TvRageWrapper
   # The main wrapper for the TVRageAPI
