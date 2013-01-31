@@ -20,5 +20,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'httparty'
   gem.add_development_dependency "rspec", "~> 2.6"
   gem.add_development_dependency "rake"
+  gem.add_development_dependency "webmock"
+  gem.add_development_dependency "debugger"
 
 end
