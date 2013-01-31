@@ -15,11 +15,11 @@ module TvRageWrapper
     include HTTParty
     base_uri 'http://services.tvrage.com/feeds'
 
-  	def self.getID(show)
+    # Assumes the show is the first show in the search
+  	def self.get_id(show)
   		response = self.get("/search.php?show=#{show}")
       data = response.parsed_response
-      debugger
-      data['Results']['show']['showid']
+      return data['Results']['show'][0]['showid']
   	end
   end
 end
