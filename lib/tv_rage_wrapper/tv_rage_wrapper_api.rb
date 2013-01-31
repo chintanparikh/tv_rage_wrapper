@@ -11,8 +11,13 @@ module TvRageWrapper
   # Full Show List          - http://services.tvrage.com/feeds/show_list.php
   
   class TvRageWrapperApi
-  	def search(show)
-  		
+    include httparty
+    base_uri 'http://services.tvrage.com/feeds?'
+
+  	def getID(show)
+  		response = self.class.get("http://services.tvrage.com/feeds/search.php?show=#{show}")
+      data = response.parsed_response
+      data['show']['showid']
   	end
   end
 end
