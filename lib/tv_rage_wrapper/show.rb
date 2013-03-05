@@ -4,12 +4,14 @@ module TvRageWrapper
 	class Show
 		include HTTParty
 
-		search_path '/search.php?show='
-		episodes_path '/episode_list.php?sid='
+		SEARCH_PATH = '/search.php?show='
+		EPISODES_PATH = '/episode_list.php?sid='
+
+		attr_reader :name, :full_name, :episodes, :genres, :id, :country, :status, :classification, :started, :ended, :seasons
  		
  		def initialize(name)
  			@name = name
- 			@full_name
+ 			@full_name = ''
 	        @episodes = Hash.new{ [] }
 	        @genres = []
 	        @id = ''
@@ -20,8 +22,8 @@ module TvRageWrapper
 	        @ended = 0
 	        @seasons = 0
 
-	        # Make the get request
-	        response = self.get(Api::base_uri + search_path + name)
+	        # Make the get request to search for the show
+	        response = self.class.get(Api::base_uri + SEARCH_PATH + name)
 	        data = response.parsed_response['Results']['show'][0]
 
 	        # Set instance variables
@@ -36,7 +38,7 @@ module TvRageWrapper
 	        @seasons = data['seasons']
 
 	        ## Generate list of episodes and episode objects
-	        response = self.get(Api::base_uri + episodes_path + @showid)
+	        response = self.class.get(Api::base_uri + EPISODES_PATH + @id)
 	        data = response.parsed_response['Show']['Episodelist']['Season']
 			
 			episodes = Hash.new{ [] }
