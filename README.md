@@ -1,6 +1,6 @@
 # TvRageWrapper
 
-TODO: Write a gem description
+A wrapper gem for the TVRage API. *Not ready for use yet!*
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+* Not ready for use yet!*
 
 ## Contributing
 
