@@ -2,6 +2,7 @@ require 'tv_rage_wrapper'
 require 'webmock/rspec'
 require 'debugger'
 
+# stub_request is part of webmock
 def stub_get(path, file)
 	stub_request(:get, TvRageWrapper::Api.base_uri + path)
 			.to_return(

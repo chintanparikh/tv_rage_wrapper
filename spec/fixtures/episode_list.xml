@@ -8,13 +8,42 @@
 <Episodelist>
 
 <Season no="1">
-<episode><epnum>1</epnum><seasonnum>01</seasonnum><prodnum>1 WTAI 65</prodnum><airdate>1965-06-28</airdate><link>http://www.tvrage.com/shows/id-432/episodes/257512</link><title>Jan &amp; Dean / The Four Seasons</title></episode>
-<episode><epnum>2</epnum><seasonnum>03</seasonnum><prodnum>2 WTAI 65</prodnum><airdate>1965-06-29</airdate><link>http://www.tvrage.com/shows/id-432/episodes/257513</link><title>The Zombies / Jimmy Clanton</title></episode>
+	<episode>
+		<epnum>1</epnum>
+		<seasonnum>01</seasonnum>
+		<prodnum>1 WTAI 65</prodnum>
+		<airdate>1965-06-28</airdate>
+		<link>http://www.tvrage.com/shows/id-432/episodes/257512</link>
+		<title>Jan &amp; Dean / The Four Seasons</title>
+	</episode>
+	<episode>
+		<epnum>2</epnum>
+		<seasonnum>02</seasonnum>
+		<prodnum>2 WTAI 65</prodnum>
+		<airdate>1965-06-29</airdate>
+		<link>http://www.tvrage.com/shows/id-432/episodes/257513</link>
+		<title>The Zombies / Jimmy Clanton</title>
+	</episode>
 </Season>
 
 <Season no="2">
-<episode><epnum>54</epnum><seasonnum>01</seasonnum><prodnum></prodnum><airdate>1965-09-13</airdate><link>http://www.tvrage.com/shows/id-432/episodes/257565</link><title>Danny Hutton</title></episode>
-<episode><epnum>55</epnum><seasonnum>02</seasonnum><prodnum></prodnum><airdate>1965-09-14</airdate><link>http://www.tvrage.com/shows/id-432/episodes/257566</link><title>The Impressions / Dickie Lee</title></episode>
+	<episode>
+		<epnum>3</epnum>
+		<seasonnum>01</seasonnum>
+		<prodnum></prodnum>
+		<airdate>1965-09-13</airdate>
+		<link>http://www.tvrage.com/shows/id-432/episodes/257565</link>
+		<title>Danny Hutton</title>
+	</episode>
+
+	<episode>
+		<epnum>4</epnum>
+		<seasonnum>02</seasonnum>
+		<prodnum></prodnum>
+		<airdate>1965-09-14</airdate>
+		<link>http://www.tvrage.com/shows/id-432/episodes/257566</link>
+		<title>The Impressions / Dickie Lee</title>
+	</episode>
 </Season>
 
 
